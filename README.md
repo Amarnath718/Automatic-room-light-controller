@@ -3,6 +3,8 @@
         **Arduino Uno (1) - Main controller**
         **IR sensors (2) - One close to entry and one slightly inside, The **
         **Relay module (1) - To turn on and off the AC LED bulb on trigger from arduino**
+        **AC-DC 12W LED Bulb** - To be connected to AC power supply via relay module**
+        **Connection wires** - For AC Current supply**
         **OLED Display (1) - To display the count (Number of people in room) **
         **Breadboard (1)**
         **Jumper wires **
