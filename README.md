@@ -7,6 +7,6 @@
         **OLED Display (1) - To display the count (Number of people in room) **
         **Breadboard (1)**
         **Jumper wires **
-##     Note: Here, the two IR sensors are placed 3.5 cm apart from each other. If distance is to be varied in different cases, try changind the delay in the code for precise count control.
+###     Note: Here, the two IR sensors are placed 3.5 cm apart from each other. If distance is to be varied in different cases, try changind the delay in the code for precise count control.
 
 
