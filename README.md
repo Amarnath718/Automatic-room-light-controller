@@ -1,5 +1,4 @@
-#    💡💡Automatic room light controller with people counter💡💡
-
+#    💡💡Automatic room light controller with people counter (For single entry/exit)💡💡
 ##    ⚙️ Components required
         **Arduino Uno (1) - Main controller**
         **IR sensors (2) - One close to entry and one slightly inside, The **
@@ -7,6 +6,38 @@
         **OLED Display (1) - To display the count (Number of people in room) **
         **Breadboard (1)**
         **Jumper wires **
-###     Note: Here, the two IR sensors are placed 3.5 cm apart from each other. If distance is to be varied in different cases, try changind the delay in the code for precise count control.
+
+##     🔗 Connections
+       ##IR Sensor 1 (Entry sensor)
+       * VCC --> 5V 
+       * Ground --> Gnd pin
+       * Out --> digital pin 2
+       ##IR sensor 2 (Exit sensor)
+       * VCC --> 5V
+       * Ground --> Gnd pin
+       * Out --> digital pin 3
+       ##5V 1 channel Relay module (Normally open config.)
+       * VCC --> 5V
+       * Ground --> Gnd pin
+       * In --> digital pin 7
+       ## OLED Display
+       * VCC --> 5V
+       * Ground --> Gnd pin
+       * SDA --> A4
+       * SCL --> A5
+       
+##      ⚙️⚙️ How it works:
+       ** When a person enters, the IR sensor 1 (Entrance sensor) is trigerred, Indicating person entered the room, Count goes from 0 to 1 in OLED display as well as serial monitor, thus the
+       bulb turns off. As people enters, count increases. When person exits the room, IR sensor 2 triggers, hence count decreases. The bulb turns off only when no people are in yhr  room, i.e
+       count = 0.Since both sensors are placed a little close to each other (Both inside the room), a delay is set between two sensors in such a way that, when one sensor activates (Entrance),
+       the other one remains deactivated for a very small interval of time, preventing from simultaneous change in the count.
+       
+       ## ⭕Note: Here, the two IR sensors are placed 3.5 cm apart from each other. If distance is to be varied in different cases, try changind the delay in the code for precise count control.
+       
+
+
+       
+       
+       
 
 
