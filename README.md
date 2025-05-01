@@ -1,7 +1,7 @@
 # 💡💡Automatic room light controller with people counter (For single entry/exit)💡💡
 ## ⚙️ Components required
 *  Arduino Uno (1) - Main controller
-*  IR sensors (2) - One close to entry and one slightly inside room
+*  IR sensors (2) - One close to the entry and one slightly inside room
 *  Relay module (1) - To turn on and off the AC LED bulb on trigger from arduino
 *  AC-DC 12W LED Bulb - To be connected to AC power supply via relay module
 *  Connection wires - For AC Current supply
