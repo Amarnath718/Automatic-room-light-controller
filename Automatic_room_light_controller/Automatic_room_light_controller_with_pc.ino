@@ -37,37 +37,37 @@ void loop()
     int in_value = digitalRead(irsensor_in);        // Reading values of IR sensors
     int out_value = digitalRead(irsensor_out);
 
-    if (in_value == LOW)
-    {
-      count++;
+    if (in_value == LOW)                            //If first sensor(entry) triggers (Both Sensors in active low config.)
+    {                                                  
+      count++;                                      // Increment the count on entering the room  
       Serial.print("Person Entered - Count: ");
       Serial.println(count);
       updateDisplay();         // Update OLED
       delay(1000);
     }
 
-    if (out_value == LOW && count > 0)
+    if (out_value == LOW && count > 0)              // If Second sensor(exit) triggers 
     {
-      count--;
+      count--;                                      // Decrement the count on exiting the room
       Serial.print("Person Exit - Count: ");
       Serial.println(count);
       updateDisplay();  // Update OLED
       delay (1000);
     }
 
-    if (count>count || count<count)
+    if (count>count || count<count)                  // To prevent simultaneous triggering of both the sensors
     {
       delay (2600);
     }
 
-    if (count == 0)
+    if (count == 0)                                  
     {
       updateDisplay();
-      digitalWrite(relay, HIGH);
+      digitalWrite(relay, HIGH);                     // Turn relay off when count is 0 (Relay in active low)
     }
     else
     {
-      digitalWrite(relay, LOW);
+      digitalWrite(relay, LOW);                      // To turn on relay when count >0
     }
   }
 }
