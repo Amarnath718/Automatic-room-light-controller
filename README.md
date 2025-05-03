@@ -22,7 +22,7 @@
 * VCC --> 5V
 * Ground --> Gnd pin
 * In --> digital pin 7
-## OLED Display
+## OLED Display (0.96  inch I2C)
 * VCC --> 5V
 * Ground --> Gnd pin
 * SDA --> A4
