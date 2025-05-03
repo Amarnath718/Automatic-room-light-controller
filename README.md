@@ -34,7 +34,7 @@ bulb turns ON. As people enters, count increases. When person exits the room, IR
 count = 0.Since both sensors are placed a little close to each other (Both inside the room), a delay is set between two sensors in such a way that, when one sensor activates (Entrance),
 the other (Exit) one remains deactivated for a very small interval of time, preventing from simultaneous change in the count.
        
-## ⭕Note: Here, the two IR sensors are placed 3.5 cm apart from each other. If distance is to be varied in different cases, try changind the delay in the code for precise count control.
+## ⭕Note: Here, the two IR sensors are placed 3.5 cm apart from each other. If distance is to be varied in different cases, try changing the delay in the code for precise count control.
        
 
 
