@@ -5,7 +5,7 @@
 *  Relay module (1) - To turn on and off the AC LED bulb on trigger from arduino
 *  AC-DC 12W LED Bulb - To be connected to AC power supply via relay module
 *  Connection wires - For AC Current supply
-*  OLED Display (1) - To display the count (Number of people in room) 
+*  0.96 inch I2C OLED Display (1) - To display the count (Number of people in room) 
 *  Breadboard (1)
 *  Jumper wires 
 
@@ -22,7 +22,7 @@
 * VCC --> 5V
 * Ground --> Gnd pin
 * In --> digital pin 7
-## OLED Display (0.96  inch I2C)
+## OLED Display 
 * VCC --> 5V
 * Ground --> Gnd pin
 * SDA --> A4
