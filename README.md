@@ -35,7 +35,7 @@ count = 0.Since both sensors are placed a little close to each other (Both insid
 the other (Exit) one remains deactivated for a very small instance of time, preventing from simultaneous change in the count and false triggers.
        
 * ⭕Note 1: Here, the two IR sensors are placed 3.5 cm apart from each other. If distance is to be varied in different cases, try changing the delay in the code for precise count control.
-  ⭕ Additional libraries required: Adafruit GFX Library, Adafruit SSD1306.
+  ⭕ Additional libraries required: Adafruit GFX Library, Adafruit SSD1306 (Both for OLED Display).
         
 
 
